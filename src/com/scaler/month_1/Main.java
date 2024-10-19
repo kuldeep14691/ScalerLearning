@@ -1,9 +1,5 @@
 package com.scaler.month_1;
 
-import java.lang.invoke.SwitchPoint;
-import java.sql.SQLOutput;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
