@@ -119,16 +119,12 @@ public class Day6_Assignments {
             //number of digits
             if(num>0) {
                 while (num > 0) {
-//                    digitCount += 1;
                     digitSum += num%10;
                     num = num / 10;
                 }
             }else {
-//                digitCount = 1;
                 digitSum = num%10;
             }
-//            System.out.println(digitCount);
-//            digitCount = 0;
             System.out.println(digitSum);
             digitSum = 0;
         }
