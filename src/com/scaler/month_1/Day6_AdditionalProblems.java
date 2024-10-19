@@ -18,16 +18,26 @@ public class Day6_AdditionalProblems {
 //        }
 //        System.out.println(evenSum);
 
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int b = sc.nextInt();
+//        int result=1;
+//
+//        while(b>0){
+//            result *= a;
+//            b--;
+//        }
+////        result = (int) Math.pow(a,b);
+//        System.out.println(result);
+
+
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int b = sc.nextInt();
-        int result=1;
+        int count=1;
 
-        while(b>0){
-            result *= a;
-            b--;
+        while(count<=10){
+            System.out.println(a + " * " + count + " = " + a*count);
+            count++;
         }
-//        result = (int) Math.pow(a,b);
-        System.out.println(result);
     }
 }
