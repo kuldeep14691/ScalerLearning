@@ -14,11 +14,20 @@ public class Day6_Assignments {
 //            count++;
 //        }
 
-        int y = sc.nextInt();
+//        int y = sc.nextInt();
+//        int count = 1;
+//        while(count<=y){
+//            System.out.print(y + " ");
+//            y--;
+//        }
+
+        int z = sc.nextInt();
         int count = 1;
-        while(count<=y){
-            System.out.print(y + " ");
-            y--;
+        while(count<=z){
+            if(count%2!=0){
+                System.out.print(count + " ");
+            }
+            count++;
         }
     }
 }
