@@ -4,6 +4,21 @@ import java.util.Scanner;
 
 class Day5_AdditionalProbalems {
     public static void main(String[] args) {
+        //Q#5
+        Scanner x = new Scanner(System.in);
+        int a = x.nextInt();
+        int b = x.nextInt();
+        int c = x.nextInt();
+        int minimum = a;
+        if(b<minimum) {
+            minimum = b;
+        }
+        if (c<minimum){
+            minimum = c;
+        }
+        System.out.println(minimum);
+
+
         //Q#4
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
