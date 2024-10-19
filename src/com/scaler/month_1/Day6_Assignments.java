@@ -31,13 +31,23 @@ public class Day6_Assignments {
 //        }
 
 
-        int p = sc.nextInt();
+//        int p = sc.nextInt();
+//        int count = 1;
+//        while(count<=p){
+//            if(count%2==0){
+//                System.out.print(count + " ");
+//            }
+//            count++;
+//        }
+
+
+        int q = sc.nextInt();
         int count = 1;
-        while(count<=p){
-            if(count%2==0){
-                System.out.print(count + " ");
-            }
+        int sum=0;
+        while(count<=q){
+            sum += count;
             count++;
         }
+        System.out.println(sum);
     }
 }
