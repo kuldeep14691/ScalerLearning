@@ -7,14 +7,14 @@ public class Day6_AdditionalProblems {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int count=1;
-        int oddSum=0;
+        int evenSum=0;
 
         while (count<=x){
-            if (count%2 != 0){
-                oddSum += count;
+            if (count%2 == 0){
+                evenSum += count;
             }
             count++;
         }
-        System.out.println(oddSum);
+        System.out.println(evenSum);
     }
 }
