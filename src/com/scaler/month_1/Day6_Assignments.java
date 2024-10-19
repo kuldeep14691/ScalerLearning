@@ -72,6 +72,34 @@ public class Day6_Assignments {
 //            count++;
 //        }
 
+//        Scanner sc = new Scanner(System.in);
+//        int numberOfTestCases;
+//        int[] arr = new int[1000];
+//        int i;
+//
+//        numberOfTestCases = sc.nextInt();
+//
+//        for(i=0;i<numberOfTestCases;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        sc.close();
+//
+//        int num;
+//        int lastDigit, firstDigit;
+//        for(i=0;i<numberOfTestCases;i++){
+//            num = arr[i];
+//            lastDigit = num%10;
+//
+//            //firstDigit
+//            while(num>9){
+//                num = num/10;
+//            }
+//            firstDigit = num;
+//
+//            System.out.println(firstDigit + " " + lastDigit);
+//        }
+
+
         Scanner sc = new Scanner(System.in);
         int numberOfTestCases;
         int[] arr = new int[1000];
@@ -84,19 +112,21 @@ public class Day6_Assignments {
         }
         sc.close();
 
-        int num;
-        int lastDigit, firstDigit;
+        int num, digitCount = 0;
         for(i=0;i<numberOfTestCases;i++){
             num = arr[i];
-            lastDigit = num%10;
 
-            //firstDigit
-            while(num>9){
-                num = num/10;
+            //number of digits
+            if(num>0) {
+                while (num > 0) {
+                    digitCount += 1;
+                    num = num / 10;
+                }
+            }else {
+                digitCount = 1;
             }
-            firstDigit = num;
-
-            System.out.println(firstDigit + " " + lastDigit);
+            System.out.println(digitCount);
+            digitCount = 0;
         }
     }
 }
