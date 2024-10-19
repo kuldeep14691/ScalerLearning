@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Day6_Assignments {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 //        int x = sc.nextInt();
 //        sc.close();
 //        int count=1;
@@ -60,16 +60,43 @@ public class Day6_Assignments {
 //        }
 
 
-        int s = sc.nextInt();
-        int count=1;
-        double sqroot=0;
+//        int s = sc.nextInt();
+//        int count=1;
+//        double sqroot=0;
+//
+//        while (count<=s){
+//            sqroot = Math.sqrt(count);
+//            if((sqroot-Math.floor(sqroot))==0){
+//                System.out.print(count +" ");
+//            }
+//            count++;
+//        }
 
-        while (count<=s){
-            sqroot = Math.sqrt(count);
-            if((sqroot-Math.floor(sqroot))==0){
-                System.out.print(count +" ");
+        Scanner sc = new Scanner(System.in);
+        int numberOfTestCases;
+        int[] arr = new int[1000];
+        int i;
+
+        numberOfTestCases = sc.nextInt();
+
+        for(i=0;i<numberOfTestCases;i++){
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+
+        int num;
+        int lastDigit, firstDigit;
+        for(i=0;i<numberOfTestCases;i++){
+            num = arr[i];
+            lastDigit = num%10;
+
+            //firstDigit
+            while(num>9){
+                num = num/10;
             }
-            count++;
+            firstDigit = num;
+
+            System.out.println(firstDigit + " " + lastDigit);
         }
     }
 }
