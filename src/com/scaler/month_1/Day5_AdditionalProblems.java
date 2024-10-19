@@ -2,13 +2,13 @@ package com.scaler.month_1;
 
 import java.util.Scanner;
 
-class Day5_AdditionalProbalems {
+class Day5_AdditionalProblems {
     public static void main(String[] args) {
         //Q#5
-        Scanner x = new Scanner(System.in);
-        int a = x.nextInt();
-        int b = x.nextInt();
-        int c = x.nextInt();
+        Scanner s1 = new Scanner(System.in);
+        int a = s1.nextInt();
+        int b = s1.nextInt();
+        int c = s1.nextInt();
         int minimum = a;
         if(b<minimum) {
             minimum = b;
