@@ -21,10 +21,20 @@ public class Day6_Assignments {
 //            y--;
 //        }
 
-        int z = sc.nextInt();
+//        int z = sc.nextInt();
+//        int count = 1;
+//        while(count<=z){
+//            if(count%2!=0){
+//                System.out.print(count + " ");
+//            }
+//            count++;
+//        }
+
+
+        int p = sc.nextInt();
         int count = 1;
-        while(count<=z){
-            if(count%2!=0){
+        while(count<=p){
+            if(count%2==0){
                 System.out.print(count + " ");
             }
             count++;
