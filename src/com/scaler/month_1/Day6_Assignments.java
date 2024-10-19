@@ -41,13 +41,22 @@ public class Day6_Assignments {
 //        }
 
 
-        int q = sc.nextInt();
-        int count = 1;
-        int sum=0;
-        while(count<=q){
-            sum += count;
+//        int q = sc.nextInt();
+//        int count = 1;
+//        int sum=0;
+//        while(count<=q){
+//            sum += count;
+//            count++;
+//        }
+//        System.out.println(sum);
+
+        int r = sc.nextInt();
+        int count=1;
+        while (count<=r){
+            if(count%4==0){
+                System.out.print(count + " ");
+            }
             count++;
         }
-        System.out.println(sum);
     }
 }
