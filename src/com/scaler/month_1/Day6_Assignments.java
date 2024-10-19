@@ -5,13 +5,20 @@ import java.util.Scanner;
 public class Day6_Assignments {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        sc.close();
-        int count=1;
+//        int x = sc.nextInt();
+//        sc.close();
+//        int count=1;
+//
+//        while (count<=x){
+//            System.out.print(count + " ");
+//            count++;
+//        }
 
-        while (count<=x){
-            System.out.print(count + " ");
-            count++;
+        int y = sc.nextInt();
+        int count = 1;
+        while(count<=y){
+            System.out.print(y + " ");
+            y--;
         }
     }
 }
