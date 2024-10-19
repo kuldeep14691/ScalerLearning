@@ -20,18 +20,12 @@ public class BankAccount {
 //            System.out.println("Invalid operation");
 //        }
 //        System.out.println(balance);
-
-//        int num = sc.nextInt();
-//        if(num%5==0 && num%11==0){
-//            System.out.println(1);
-//        }else {
-//            System.out.println(0);
-//        }
-
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int result = Math.floorDiv(a,b);
-        System.out.println(result);
+        int num = sc.nextInt();
+        if(num%5==0 && num%11==0){
+            System.out.println(1);
+        }else {
+            System.out.println(0);
+        }
 
     }
 }
