@@ -18,6 +18,7 @@ public class Day6_AdditionalProblems {
 //        }
 //        System.out.println(evenSum);
 
+
 //        Scanner sc = new Scanner(System.in);
 //        int a = sc.nextInt();
 //        int b = sc.nextInt();
@@ -31,13 +32,44 @@ public class Day6_AdditionalProblems {
 //        System.out.println(result);
 
 
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int count=1;
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int count=1;
+//
+//        while(count<=10){
+//            System.out.println(a + " * " + count + " = " + a*count);
+//            count++;
+//        }
 
-        while(count<=10){
-            System.out.println(a + " * " + count + " = " + a*count);
-            count++;
+        long balance;
+        long numberOfOperations;
+        long count;
+
+        Scanner sc = new Scanner(System.in);
+        balance = sc.nextLong();
+        numberOfOperations = sc.nextLong();
+
+        long[] operations_type = new long[(int) numberOfOperations];    //1=credit 2=debit
+        long[] operations_amount = new long[(int) numberOfOperations];
+
+
+        for (count=0;count<numberOfOperations;count++){
+            operations_type[(int) count] = sc.nextLong();
+            operations_amount[(int) count] = sc.nextLong();
+
+            if (operations_type[(int) count] == 1){
+                balance += operations_amount[(int) count];
+                System.out.println(balance);
+            } else if (operations_type[(int) count]==2) {
+                if (operations_amount[(int) count]>balance){
+                    System.out.println("Insufficient Funds");
+                }else {
+                    balance -= operations_amount[(int) count];
+                    System.out.println(balance);
+                }
+            }
         }
+
+        sc.close();
     }
 }
