@@ -50,11 +50,24 @@ public class Day6_Assignments {
 //        }
 //        System.out.println(sum);
 
-        int r = sc.nextInt();
+//        int r = sc.nextInt();
+//        int count=1;
+//        while (count<=r){
+//            if(count%4==0){
+//                System.out.print(count + " ");
+//            }
+//            count++;
+//        }
+
+
+        int s = sc.nextInt();
         int count=1;
-        while (count<=r){
-            if(count%4==0){
-                System.out.print(count + " ");
+        double sqroot=0;
+
+        while (count<=s){
+            sqroot = Math.sqrt(count);
+            if((sqroot-Math.floor(sqroot))==0){
+                System.out.print(count +" ");
             }
             count++;
         }
