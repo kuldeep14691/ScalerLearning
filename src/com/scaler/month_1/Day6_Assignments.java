@@ -112,21 +112,25 @@ public class Day6_Assignments {
         }
         sc.close();
 
-        int num, digitCount = 0;
+        int num, digitCount = 0, digitSum=0;
         for(i=0;i<numberOfTestCases;i++){
             num = arr[i];
 
             //number of digits
             if(num>0) {
                 while (num > 0) {
-                    digitCount += 1;
+//                    digitCount += 1;
+                    digitSum += num%10;
                     num = num / 10;
                 }
             }else {
-                digitCount = 1;
+//                digitCount = 1;
+                digitSum = num%10;
             }
-            System.out.println(digitCount);
-            digitCount = 0;
+//            System.out.println(digitCount);
+//            digitCount = 0;
+            System.out.println(digitSum);
+            digitSum = 0;
         }
     }
 }
